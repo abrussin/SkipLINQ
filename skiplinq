@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+class Program
+{
+    static void Main()
+    {
+        List<string> cities = new List<string> { "Tallinn", "Tartu", "Pärnu", "Narva", "Haapsalu", "Rakvere", "Viljandi" };
+
+        // Kasutame Skip, et jätta vahele esimesed 2 linna
+        var skippedCities = cities.Skip(2);
+
+        Console.WriteLine("Linnad peale kahe esimese vahele jätmist:");
+        foreach (var city in skippedCities)
+        {
+            Console.WriteLine(city);
+        }
+    }
+}
